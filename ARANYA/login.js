@@ -8,14 +8,18 @@ login.addEventListener("submit", async (e) => {
     password: e.target[1].value,
   };
 
-  const signup = await fetch("http://localhost:3005/validateUser", {
-    method: "POST",
-    mode: "cors",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(body),
-  });
+  const signup = await fetch(
+    "https://peaceful-fortress-28413.herokuapp.com/validateUser",
+    {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify(body),
+    }
+  );
   const data = await signup.json();
   // console.log(data);
   if (data.status === "OK") {
