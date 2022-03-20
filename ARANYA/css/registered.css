@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+html {
+  background-image: url("bgregis.png");
+  background-size: cover;
+  background-color: bisque;
+}
+
+.text {
+  margin-top: 14rem;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -1.2;
+  text-align: center;
+
+}
+
