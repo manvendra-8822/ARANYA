@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="css/login.css">
-<title> CSS Login Screen Tutorial </title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Login</title>
+  </head>
+
   <body>
     <div class="login-page">
       <div class="form">
@@ -14,15 +14,22 @@
             <p>Please enter your credentials to login.</p>
           </div>
         </div>
-        <form class="login-form">
-          <input type="text" placeholder="e-mail or phone no."/ required>
-          <input type="password" placeholder="password"/ required>
-          <button onclick="document.location='thank.html'"
-          class="btn btn--form">login</button>
-          <p class="message">Not registered? <a href="form4.html">Create an account</a></p>
+        <form class="login login-form">
+          <input type="text" name="name" placeholder="e-mail"/ required> <input
+          type="password" type="password" placeholder="password"/ required>
+          <button
+            onclick="document.location='thank.html'"
+            class="btn btn--form"
+            type="submit"
+          >
+            login
+          </button>
+          <p class="message">
+            Not registered? <a href="form4.html">Create an account</a>
+          </p>
         </form>
       </div>
     </div>
-</body>
-</body>
+    <script src="./login.js"></script>
+  </body>
 </html>
